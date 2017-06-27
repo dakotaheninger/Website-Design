@@ -1,0 +1,209 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+#main-row {
+    position: fixed;
+    width: 100%;
+    margin-top: 4vh;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#top-main {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    z-index: 1;
+/*    text-decoration: underline;*/
+    background-color: #0D47A1;
+}
+
+#transparent-row {
+    height: 7vh;
+}
+
+.cowboys-car {
+    margin-top: 10vh;
+    height: 80vh;
+    box-shadow: 0 0 4vh 4vh;
+}
+
+.zeke {
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+    background-image: url(images/zeke4.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.dot {
+    font-size: 20px;
+}
+
+.dak {
+    height: 80vh;
+    background-image: url(images/dak3.jpg);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dez {
+    height: 80vh;
+    background-image: url(images/dez.jpg);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#full-schedule {
+    height: 80vh;
+    width: 100%;
+}
+.text-champion {
+    height: 80vh;
+}
+
+.champions { 
+    padding-top: 15vmax;
+    text-align: center;
+    font-size: 5vw;
+    background-color: white;
+    color: #0D47A1;
+}
+
+.years {
+    text-align: center;
+    font-size: 3vw;
+    background-color: white;
+    color: #0D47A1;
+}
+
+.dot {
+    font-size: 1vw;
+    vertical-align: middle;
+    color: #0D47A1;
+}
+
+.text-schedule {
+    color: white;
+    font-size: 3vmax;
+    background-color: #0D47A1;
+    padding-left: 3vw;
+}
+
+th {
+    font-size: 2vmax;
+    padding: 0 1vmax;
+    padding-left: 2vw;
+    margin: 0 auto;
+}
+
+td {
+    font-size: 1.8vmin;
+    padding: .7vh .7vh;
+    padding-left: 4vw;
+}
+
+.original {
+    color: white;
+    background-color: #0D47A1;
+}
+
+.every-other {
+    background-color: rgb(255, 255, 255);
+    color: #0D47A1;
+}
+.follow {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Fjalla One', sans-serif;
+    height: 80vh;
+    
+}
+.follow-icon {
+    text-align: center;
+    font-size: 5vw;
+    padding-top: 10vmax;
+    color: #0D47A1;
+}
+a {
+    color: #0D47A1;
+    border-radius: 10px;
+/*    padding: 3px;*/
+}
+
+a:hover {
+    color: white;
+    background-color: rgba(13,71,161,0.2);
+    border-radius: 10px;
+}
+.face {
+    padding: 10px;
+}
+.icon-li:hover {
+    color: white;
+    background-color: #0D47A1;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 4vh 4vh;
+}
+
+
+@media (max-width: 1300px){
+    .zeke {
+        background-repeat: no-repeat
+    }
+    .dak {
+        background-repeat: no-repeat;
+    }
+    .dez {
+        background-repeat: no-repeat;
+    }
+    td {
+        font-size: 1.95vh;
+    }
+    .champions {
+        padding-top: 30vh;
+    }
+}
+@media (max-width: 500px){
+    .text-schedule {
+        padding-left: 4vw;
+    }
+    th {
+        padding-left: 4vw;
+    }
+    td {
+        font-size: 1.55vh;
+        padding-left: 5vw;
+    }
+    .week {
+        display: none;
+    }
+}
+@media (max-width: 320px){
+    .text-schedule {
+        padding-left: 6vw;
+    }
+    th {
+        padding-left: 5vw;
+    }
+    td {
+        padding-left: 10vw;
+    }
+}
+

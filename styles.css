@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+}
+
+video {
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 1;
+    height: 100%;
+}
+
+.content {
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    margin-top: 20vh;
+}
+
+.welcome {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 10vh;
+}
+
+.star {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.witness {
+    text-align: center;
+    margin-bottom: 20vh;
+}
+
+.witness-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid black;
+    font-size: 3vh;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    padding: .5vh 4%;
+    letter-spacing: 2px;
+}
+
+.witness-button:hover {
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.animated {
+    animation-delay: 10s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.dallas-star {
+    animation-delay: 12s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes starFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.starFade {
+    animation-name: starFade;
+}
+
+.dallas-witness {
+    animation-delay: 14s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+@keyframes witnessFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.witnessFade {
+    animation-name: witnessFade;
+}
